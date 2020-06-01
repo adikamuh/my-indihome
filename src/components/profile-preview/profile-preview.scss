@@ -1,0 +1,44 @@
+.profile-preview-container{
+    margin-top: 3em;
+
+    .profile-preview-wrapper{
+        margin-left: 8%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .avatar{
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            background-color: black;
+
+            margin-right: 2em;
+        }
+
+        .content{
+
+            p{
+                margin: 0;
+            }
+            .greeting{
+                font-size: 14px;
+                letter-spacing: 1px;
+                opacity: 50%;
+            }
+            .profile{
+                margin: 0.5em 0;
+                font-size: 20px;
+                text-decoration: none;
+                letter-spacing: 0;
+                color: black;
+                display: flex;
+                align-items: center;
+            }
+            .points{
+                font-size: 16px;
+                letter-spacing: 0;
+            }
+        }
+    }
+}

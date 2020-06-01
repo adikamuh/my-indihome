@@ -1,0 +1,21 @@
+{
+    "plugins":[
+        {
+            "name": "@zeplin/cli-connect-react-plugin"
+        }
+    ],
+    "projects": [
+        "5eaa4722e00b7524c919e743"
+    ],
+    "styleguides": [],
+    "components": [
+        {
+            "path": "src/components/button-primary/index.js",
+            "zeplinNames": [
+                "Button/Primary/enabled",
+                "Button/Primary/disabled",
+                "Button/Secondary"
+            ]
+        }
+    ]
+}

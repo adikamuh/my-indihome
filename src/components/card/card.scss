@@ -1,0 +1,103 @@
+.card-container{
+    width: 48%;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px 0 #191a1a26;
+    background-color: #ffffff;
+
+    .card-body{
+        // padding: 1em;
+        height: 75%;
+        
+        .body-wrapper{
+            padding: 2em;
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between;
+        }
+        p{
+            margin: 3% 0;
+        }
+
+        .content{
+            align-items: flex-start;
+
+            .title{
+                font-size: 15px;
+                font-weight: normal;
+                color: #b2b4b5;
+            }
+            .bill{
+                font-size: 34px;
+                font-weight: bold;
+                color: #191a1a;
+            }
+            .detail{
+                align-items: center;
+                display: flex;
+                justify-content: flex-start;
+                text-decoration: none;
+
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: 1.04px;
+                color: #ee3124;
+            }
+
+            // USAGE
+            .usage{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;;
+                // margin: 3% 0;
+
+                .details{
+                    margin-right: 50px;
+                    
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        margin-right: 1em;
+                    }
+
+                    h3{
+                        font-size: 34px;
+                        display: flex;
+                        // align-items: center;
+                        margin: 0;
+                        .small{
+                            margin-top: 0.6em;
+                            margin-left: 0.2em;
+                            font-size: 12px;
+                            font-weight: bold;
+                            color: #b2b4b5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card-footer{
+        height: 25%;
+        background-image: linear-gradient(to top, #ffffff00, #f1f1f1);
+
+        
+        .footer-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em 2em;
+
+            div{
+                font-size: 15px;
+                color: #b2b4b5;
+            }
+            .date{
+                font-size: 18px;
+                font-weight: bold;
+                color: #191a1a;
+            }
+        }
+    }
+}
