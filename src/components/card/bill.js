@@ -12,7 +12,7 @@ function Bill(props){
                 <div className="body-wrapper">
                     <div className="content">
                         <p className="title">Tagihan bulan ini</p>
-                        <p className="bill">Rp123.123</p>
+                        <p className="bill">Rp123.113</p>
                         <a className="detail" href="bill">
                             <p>LIHAT DETAIL</p>
                             <img src={redArrow} alt=""></img>

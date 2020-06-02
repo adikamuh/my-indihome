@@ -5,6 +5,8 @@ import Header from './components/header'
 import ProfilePreview from './components/profile-preview'
 import Bill from './components/card/bill';
 import Usage from './components/card/usage';
+import Footer from './components/footer';
+import FooterCopyright from './components/footer-copyright';
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
         <Bill />
         <Usage />
       </div>
+
+      <Footer />
+      <FooterCopyright />
     </div>
   );
 }

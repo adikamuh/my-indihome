@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './card.scss'
-import Filled from '../label/filled'
+// import Filled from '../label/filled'
 
 import redArrow from '../../assets/ic-chevron-red.svg'
 import wifi from '../../assets/ic-usage-wifi.svg'
