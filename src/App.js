@@ -7,6 +7,7 @@ import Bill from './components/card/bill';
 import Usage from './components/card/usage';
 import Footer from './components/footer';
 import FooterCopyright from './components/footer-copyright';
+import Notification from './components/notification';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Bill />
         <Usage />
       </div>
+      <Notification />
 
       <Footer />
       <FooterCopyright />

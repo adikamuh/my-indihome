@@ -1,0 +1,32 @@
+.notification-container{
+    border-radius: 8px;
+    background-color: #191a1a;
+
+    margin: 0 8%;
+    margin-top: 3em;
+
+    cursor: pointer;
+
+    .notification-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1em 2em;
+
+        .notification-content{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .notification-info{
+                color: white;
+
+                margin-left: 1em;
+                h5, p{
+                    margin: 0.5em;
+                }
+            }
+        }
+    }
+}
