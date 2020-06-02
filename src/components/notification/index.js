@@ -19,17 +19,19 @@ class Notification extends React.Component{
 
     render(){
         return(
-            <div className="notification-container" onClick={this.handleClick}>
-                <div className="notification-wrapper">
-                    <div className="notification-content">
-                        <img className="exclamation" src={exclamation} alt=""></img>
-                        <div className="notification-info">
-                            <h5>{this.state.notification}</h5>
-                            <p>Tap here to top up.</p>
+            <div>
+                <div className="notification-container" onClick={this.handleClick}>
+                    <div className="notification-wrapper">
+                        <div className="notification-content">
+                            <img className="exclamation" src={exclamation} alt=""></img>
+                            <div className="notification-info">
+                                <h5>{this.state.notification}</h5>
+                                <p>Tap here to top up.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <img src={whiteArrow} alt=""></img>
+                        <img src={whiteArrow} alt=""></img>
+                    </div>
                 </div>
             </div>
         )
