@@ -4,6 +4,14 @@ body{
   background-color: #f2f2f2;
 }
 
+// TEXT STYLES
+h1{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.39;
+  color: #333333;
+}
+
 h3{
   font-size: 20px;
   font-weight: bold;
@@ -34,4 +42,46 @@ h6{
   color: #ffffff;
 
   margin: 1em 0;
+}
+
+.title-small{
+  
+  font-size: 14px;
+  color: #808080;
+}
+
+.text-small{
+  line-height: 1.5;
+  color: #333333;
+}
+
+.link{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.04px;
+  color: #ee3124;
+  text-decoration: none;
+}
+
+.font-weight-bold{
+  font-weight: bold;
+}
+
+// BUTTON
+.btn-primary{
+  width: fit-content;
+  height: 55px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ee3124;
+  cursor: pointer;
+
+  padding: 1em 4em;
+  margin: 1em 0;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.91px;
+  text-align: center;
+  color: white;
+
 }

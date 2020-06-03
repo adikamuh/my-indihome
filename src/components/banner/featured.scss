@@ -1,0 +1,25 @@
+.featured-container{
+    height: 140px;
+    max-width: 300px;
+    margin-top: 3em;
+    margin-left: 8%;
+    
+    
+    .featured-poster{
+        height: 140px;
+        width: 300px;
+        border-radius: 9px;
+        background-color: black;
+
+        .featured-bg{
+            height: 140px;
+            width: 100px;
+            border-radius: 9px 0 0 9px;
+            background-color: blue;
+
+            .featured-wrapper{
+                padding: 0.2em 1em;
+            }
+        }
+    }
+}

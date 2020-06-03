@@ -8,6 +8,9 @@ import Usage from './components/card/usage';
 import Footer from './components/footer';
 import FooterCopyright from './components/footer-copyright';
 import Notification from './components/notification';
+import Featured from './components/banner/featured';
+import Offer from './components/banner/offer';
+import Subscribe from './components/subscribe/subscribe';
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
         <Usage />
       </div>
       <Notification />
+      <Featured />
+      <Offer />
+      <Subscribe />
 
       <Footer />
       <FooterCopyright />
