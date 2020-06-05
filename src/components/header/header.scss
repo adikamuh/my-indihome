@@ -12,15 +12,11 @@
             justify-content: space-between;
             align-items: center;
             height: 80px;
-            
-            .content-logo{
-                height: 37px;
-                align-items: center;
                 
-                img{
-                    height: 100%;
-                    align-items: center;
-                }
+            .nav-logo{
+                width: 210px;
+                // height: 100%;
+                // align-items: center;
             }
             
             .content-menus{
@@ -52,13 +48,18 @@
                     }
                     
                     .dropdown-list{
-    
+                        display: flex;
+
                         .arrow {
                             margin-left: 0.2em;
                             width: 100%;
                         }
                     }
                 }
+            }
+
+            .toggle-profile, .toggle-button{
+                display: none;
             }
         }
     }
