@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <link rel="stylesheet" href="./Indihome_files/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Indihome</title>
+  <style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><style type="text/css">body {
+  font-family: Ubuntu;
+  background-color: #f2f2f2; }
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.39;
+  color: #333333; }
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #191a1a; }
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0px; }
+
+h6 {
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 1em 0; }
+
+.title-small {
+  font-size: 14px;
+  color: #808080; }
+
+.text-small {
+  line-height: 1.5;
+  color: #333333; }
+
+.nav-item {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  text-align: center;
+  color: #191a1a;
+  text-decoration: none;
+  display: flex; }
+
+.link {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.04px;
+  color: #ee3124;
+  text-decoration: none; }
+
+.font-weight-bold {
+  font-weight: bold; }
+
+.btn-primary {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 55px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ee3124;
+  cursor: pointer;
+  padding: 1em 4em;
+  margin: 1em 0;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.91px;
+  text-align: center;
+  color: white; }
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+</style><style type="text/css">.header-container {
+  position: top;
+  align-items: center;
+  background-color: white;
+  padding: auto; }
+  .header-container .header-wrapper {
+    margin: 0 8%; }
+    .header-container .header-wrapper nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px; }
+      .header-container .header-wrapper nav .nav-logo {
+        width: 210px; }
+      .header-container .header-wrapper nav .content-menus {
+        margin: 0; }
+        .header-container .header-wrapper nav .content-menus ul {
+          display: flex;
+          justify-content: space-between;
+          list-style-type: none;
+          align-items: center; }
+          .header-container .header-wrapper nav .content-menus ul li {
+            margin-left: 2em;
+            display: flex; }
+            .header-container .header-wrapper nav .content-menus ul li a {
+              font-size: 14px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: 0.75px;
+              text-align: center;
+              color: #191a1a;
+              text-decoration: none;
+              display: flex; }
+          .header-container .header-wrapper nav .content-menus ul .dropdown-list {
+            display: flex; }
+            .header-container .header-wrapper nav .content-menus ul .dropdown-list .arrow {
+              margin-left: 0.2em;
+              width: 100%; }
+      .header-container .header-wrapper nav .toggle-profile, .header-container .header-wrapper nav .toggle-button {
+        display: none; }
+</style><style type="text/css">@media screen and (max-width: 768px) {
+  .header-container .header-wrapper nav {
+    height: 50px; }
+    .header-container .header-wrapper nav .nav-logo {
+      width: 100px; }
+    .header-container .header-wrapper nav .content-menus {
+      display: none; }
+    .header-container .header-wrapper nav .toggle-profile, .header-container .header-wrapper nav .toggle-button {
+      display: block; }
+  .mobile-container {
+    background-color: white; }
+  .mobile {
+    margin: 0 3%;
+    height: auto;
+    padding: 1% 0; }
+    .mobile .content-toggle ul {
+      display: block;
+      justify-content: flex-start;
+      align-items: flex-start;
+      list-style-type: none; }
+      .mobile .content-toggle ul li {
+        margin: 1em 0; }
+      .mobile .content-toggle ul .dropdown-list {
+        display: flex; }
+        .mobile .content-toggle ul .dropdown-list .arrow {
+          margin-left: 0.5em; }
+      .mobile .content-toggle ul .group-items {
+        margin-top: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
+        .mobile .content-toggle ul .group-items a {
+          margin-right: 1em; }
+  .fade-in {
+    animation-duration: 1s;
+    animation-name: fadeIn;
+    display: block; }
+  .fade-out {
+    animation-duration: 1s;
+    animation-name: fadeOut;
+    display: none; }
+  .hide {
+    display: none; }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+      display: none; }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      display: block; } }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      display: block; }
+    to {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+      display: none; } } }
+</style><style type="text/css">.profile-preview-container {
+  margin-top: 3em; }
+  .profile-preview-container .profile-preview-wrapper {
+    margin-left: 8%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .profile-preview-container .profile-preview-wrapper .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      background-color: black;
+      margin-right: 2em; }
+    .profile-preview-container .profile-preview-wrapper .content p {
+      margin: 0; }
+    .profile-preview-container .profile-preview-wrapper .content .greeting {
+      font-size: 14px;
+      letter-spacing: 1px;
+      opacity: 50%; }
+    .profile-preview-container .profile-preview-wrapper .content .profile {
+      margin: 0.5em 0;
+      font-size: 20px;
+      text-decoration: none;
+      letter-spacing: 0;
+      color: black;
+      display: flex;
+      align-items: center; }
+    .profile-preview-container .profile-preview-wrapper .content .points {
+      font-size: 16px;
+      letter-spacing: 0; }
+</style><style type="text/css">.card-container {
+  width: 40vw;
+  min-width: 510px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 0 #191a1a26;
+  background-color: #ffffff; }
+  .card-container .card-body {
+    width: 100%;
+    height: 75%; }
+    .card-container .card-body .body-wrapper {
+      padding: 2em;
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-between; }
+    .card-container .card-body p {
+      margin: 3% 0; }
+    .card-container .card-body .content {
+      align-items: flex-start; }
+      .card-container .card-body .content .title {
+        font-size: 15px;
+        font-weight: normal;
+        color: #b2b4b5; }
+      .card-container .card-body .content .bill {
+        font-size: 34px;
+        font-weight: bold;
+        color: #191a1a; }
+      .card-container .card-body .content .detail {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1.04px;
+        color: #ee3124; }
+      .card-container .card-body .content .usage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .card-container .card-body .content .usage .details {
+          margin-right: 50px;
+          display: flex;
+          align-items: center; }
+          .card-container .card-body .content .usage .details img {
+            margin-right: 1em; }
+          .card-container .card-body .content .usage .details h3 {
+            font-size: 34px;
+            display: flex;
+            margin: 0; }
+            .card-container .card-body .content .usage .details h3 .small {
+              margin-top: 0.6em;
+              margin-left: 0.2em;
+              font-size: 12px;
+              font-weight: bold;
+              color: #b2b4b5; }
+  .card-container .card-footer {
+    height: 25%;
+    background-image: linear-gradient(to top, #ffffff00, #f1f1f1); }
+    .card-container .card-footer .footer-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1em 2em; }
+      .card-container .card-footer .footer-wrapper div {
+        font-size: 15px;
+        color: #b2b4b5; }
+      .card-container .card-footer .footer-wrapper .date {
+        font-size: 18px;
+        font-weight: bold;
+        color: #191a1a; }
+</style><style type="text/css">.filled-container {
+  width: 100px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ee4c24;
+  font-family: Ubuntu;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: auto;
+  border: none; }
+</style><style type="text/css">.footer-container {
+  height: 350px;
+  padding-top: 3em;
+  background-color: #333435; }
+  .footer-container .footer-wrapper {
+    margin: 0 8%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .footer-container .footer-wrapper .first-content .logo {
+      width: 232px; }
+    .footer-container .footer-wrapper .first-content .store img {
+      width: 134px;
+      margin-right: 1em; }
+    .footer-container .footer-wrapper .second-content ul {
+      list-style-type: none;
+      text-align: left;
+      padding-left: 0; }
+      .footer-container .footer-wrapper .second-content ul li {
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        margin-top: 1em; }
+    .footer-container .footer-wrapper .third-content {
+      width: 368px; }
+      .footer-container .footer-wrapper .third-content .newsletter {
+        width: 100%;
+        height: 52px;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px 0 #00000033;
+        background-color: #ffffff;
+        border: none; }
+      .footer-container .footer-wrapper .third-content .btn-submit {
+        margin-left: -92px;
+        width: 85px;
+        height: 40px;
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.86px;
+        text-align: center;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 6px;
+        border: none;
+        background-color: #ee3124; }
+      .footer-container .footer-wrapper .third-content .btn-submit:active {
+        border: none;
+        padding-left: 1em; }
+      .footer-container .footer-wrapper .third-content ::placeholder {
+        padding-left: 1em;
+        opacity: 0.3;
+        font-family: Ubuntu;
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #333333; }
+      .footer-container .footer-wrapper .third-content .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        border: solid 1px #ffffff; }
+        .footer-container .footer-wrapper .third-content .contact .phone {
+          display: flex;
+          justify-content: flex-start; }
+          .footer-container .footer-wrapper .third-content .contact .phone img {
+            width: 30px; }
+          .footer-container .footer-wrapper .third-content .contact .phone .contact-center {
+            margin-left: 1em;
+            color: white; }
+            .footer-container .footer-wrapper .third-content .contact .phone .contact-center .text-contact {
+              margin: 0 0; }
+        .footer-container .footer-wrapper .third-content .contact .phone-number {
+          font-size: 40px;
+          font-weight: bold;
+          letter-spacing: 3.33px;
+          color: #ffffff; }
+          .footer-container .footer-wrapper .third-content .contact .phone-number h4 {
+            margin: 0; }
+      .footer-container .footer-wrapper .third-content .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 1em; }
+        .footer-container .footer-wrapper .third-content .social-media img {
+          margin-right: 0.5em; }
+</style><style type="text/css">.copyright-container {
+  height: 56px;
+  background-color: #000000; }
+  .copyright-container .copyright-wrapper {
+    margin: 0 8%;
+    padding: 19px 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+    .copyright-container .copyright-wrapper .copyright {
+      color: white;
+      font-size: 12px; }
+      .copyright-container .copyright-wrapper .copyright p {
+        margin: 0; }
+    .copyright-container .copyright-wrapper .terms {
+      font-size: 16px; }
+      .copyright-container .copyright-wrapper .terms a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1em; }
+</style><style type="text/css">.notification-container {
+  border-radius: 8px;
+  background-color: #191a1a;
+  margin: 0 8%;
+  margin-top: 3em;
+  cursor: pointer;
+  box-shadow: 0px 17px 10px -10px rgba(112, 156, 174, 0.5); }
+  .notification-container .notification-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em; }
+    .notification-container .notification-wrapper .notification-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .notification-container .notification-wrapper .notification-content .notification-info {
+        color: white;
+        margin-left: 1em; }
+        .notification-container .notification-wrapper .notification-content .notification-info h5, .notification-container .notification-wrapper .notification-content .notification-info p {
+          margin: 0.5em; }
+</style><style type="text/css">.featured-container {
+  height: 140px;
+  max-width: 300px;
+  margin-top: 3em;
+  margin-left: 8%; }
+  .featured-container .featured-poster {
+    border-radius: 9px;
+    background-repeat: no-repeat;
+    background-position: right; }
+    .featured-container .featured-poster .featured-bg {
+      height: 140px;
+      width: 100%;
+      border-radius: 9px 0 0 9px;
+      background-position: left;
+      background-repeat: no-repeat; }
+      .featured-container .featured-poster .featured-bg .featured-wrapper {
+        align-items: center;
+        padding: 1em 1em;
+        height: 100%;
+        width: 30%; }
+        .featured-container .featured-poster .featured-bg .featured-wrapper h5 {
+          font-size: 15px;
+          color: white;
+          margin: auto; }
+        .featured-container .featured-poster .featured-bg .featured-wrapper p {
+          font-family: Ubuntu;
+          font-size: 12px;
+          line-height: 1.43;
+          color: #ffffff;
+          margin: auto; }
+</style><style type="text/css">.offer-container {
+  margin-left: 8%;
+  margin-top: 3em;
+  width: 270px;
+  height: 270px;
+  background-color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end; }
+  .offer-container .offer-wrapper {
+    display: block;
+    padding: 1.5em;
+    color: white; }
+    .offer-container .offer-wrapper p {
+      margin-top: auto; }
+</style><style type="text/css">.subscribe-container {
+  margin-top: 3em;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  display: flex; }
+  .subscribe-container .subscribe-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 8%; }
+    .subscribe-container .subscribe-wrapper .content {
+      display: block;
+      width: 55%; }
+      .subscribe-container .subscribe-wrapper .content .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3.5em; }
+        .subscribe-container .subscribe-wrapper .content .logo .stream-logo {
+          height: 25px;
+          margin-right: 2em; }
+    .subscribe-container .subscribe-wrapper .poster .poster-img {
+      width: 270px;
+      height: 396px;
+      border-radius: 5px;
+      background-color: grey;
+      box-shadow: 0px 17px 10px -10px rgba(112, 156, 174, 0.5); }
+</style><style type="text/css">.userInfo-container {
+  margin-top: 3em; }
+  .userInfo-container .userInfo-wrapper {
+    margin: 0 8%;
+    display: flex;
+    justify-content: flex-start; }
+    .userInfo-container .userInfo-wrapper .content-right {
+      margin-left: auto; }
+
+@media screen and (max-width: 1120px) {
+  .userInfo-container .userInfo-wrapper {
+    display: block; }
+    .userInfo-container .userInfo-wrapper .content-right {
+      margin-top: 1em; } }
+</style><script charset="utf-8" src="./Indihome_files/main.9bf6ac596a4e9d81bc49.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.48c39d6ea17b2095a4bb.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.b507c20eded3b1a6042d.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.4c40682452851414c641.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.4627f122dd8a12d5c006.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.24b786dcb594185e9ad2.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.1e8a5e988f54a65d5a63.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.34141fc7e1c00d1966ef.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.b7ed03cf2bac8044b377.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.8421f55d866f99b6e800.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.78b16b89454f8938ffb3.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.67d48968cc63db9befc5.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.d1ee8393030df143770c.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.56963e7825ae3b6b9b11.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.1b636dbbbd0badbb74ba.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.245480ceb609213b7232.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.1267c9f2bb4b8a24dd52.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.657f701ca2df9c108c7a.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.13ff7f1735572220c99d.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.925d738962e8ad123cd0.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.2bb68d9836e643da8e22.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.f25b374e62f629a4cecd.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.10bf301b6fabeb209042.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.9c407be95ea54935f4fc.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.64cb7cb4a428af5d18fe.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.0533a9d844ed43fcb5d7.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.99541f499afde32a6ff3.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.e2e65c01f29e38bef753.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.6333d07c0e512efa1721.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.ddb041a7da0b9b93b7b5.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.60486ea1ac4de964ebe0.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.888c00dc3a13ee4e2212.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.6939bde0c2168885ec90.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.bace6969f73fd4811556.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.7feefc075ceaf9ccb10c.hot-update.js"></script><script charset="utf-8" src="./Indihome_files/main.e2caf68f736e8d155e35.hot-update.js"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class=""><div class="header-container"><div class="header-wrapper"><nav><a class="toggle-profile" href="http://localhost:3000/profile"><img class="" alt="" src="./Indihome_files/ic-web-profile-default.66d1fd00.svg"></a><img class="nav-logo" src="./Indihome_files/Logo-IndiHome.61bb3d5b.png" alt=""><div class="content-menus"><ul><li><a href="http://localhost:3000/home">HOME</a></li><li class="dropdown-list"><a href="http://localhost:3000/shop">SHOP</a><img src="./Indihome_files/down-arrow.0dbc0a23.svg" class="arrow" alt=""></li><li><a href="http://localhost:3000/promo">PROMO &amp; EVENT</a></li><li><a href="http://localhost:3000/bantuan">BANTUAN</a></li><li><a href="http://localhost:3000/search"><img class="" alt="" src="./Indihome_files/ic-search-red.af314a5d.svg"></a></li><li><a href="http://localhost:3000/inbox"><img class="" alt="" src="./Indihome_files/ic-web-inbox-default.e44aa164.svg"></a></li><li><a href="http://localhost:3000/history"><img class="" alt="" src="./Indihome_files/ic-web-history-default.5c6623a2.svg"></a></li><li><a href="http://localhost:3000/profile"><img class="" alt="" src="./Indihome_files/ic-web-profile-default.66d1fd00.svg"></a></li></ul></div><button class="toggle-button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 12 16" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path></svg></button></nav></div></div><div class="animated slideOutUp" style="animation-delay: 0ms; animation-duration: 1000ms; pointer-events: none; display: none;"><div class="mobile-container fade-out"><div class="mobile"><div class="content-toggle"><ul><li><a class="nav-item" href="http://localhost:3000/home">HOME</a></li><li class="dropdown-list"><a class="nav-item" href="http://localhost:3000/shop">SHOP</a><img src="./Indihome_files/down-arrow.0dbc0a23.svg" class="arrow" alt=""></li><li><a class="nav-item" href="http://localhost:3000/promo">PROMO &amp; EVENT</a></li><li><a class="nav-item" href="http://localhost:3000/bantuan">BANTUAN</a></li><li class="group-items"><a class="nav-item" href="http://localhost:3000/search"><img class="" alt="" src="./Indihome_files/ic-search-red.af314a5d.svg"></a><a class="nav-item" href="http://localhost:3000/inbox"><img class="" alt="" src="./Indihome_files/ic-web-inbox-default.e44aa164.svg"></a><a class="nav-item" href="http://localhost:3000/profile"><img class="" alt="" src="./Indihome_files/ic-web-profile-default.66d1fd00.svg"></a><a class="nav-item" href="http://localhost:3000/history"><img class="" alt="" src="./Indihome_files/ic-web-history-default.5c6623a2.svg"></a></li></ul></div></div></div></div><div class="profile-preview-container"><div class="profile-preview-wrapper"><div class="avatar"></div><div class="content"><p class="greeting">SELAMAT PAGI</p><a class="profile" href="http://localhost:3000/profile"><p>Michelle Lesmana</p><img src="./Indihome_files/ic-chevron-white.158614bb.svg" alt=""></a><p class="points">1,290 pts</p></div></div></div><div class="userInfo-container"><div class="userInfo-wrapper"><div class="content-left"><div class="card-container"><div class="card-body"><div class="body-wrapper"><div class="content"><p class="title">Tagihan bulan ini</p><p class="bill">Rp123.113</p><a class="detail" href="http://localhost:3000/bill"><p>LIHAT DETAIL</p><img src="./Indihome_files/ic-chevron-red.ec468e03.svg" alt=""></a></div><div class="element"><button class="filled-container">Belum Dibayar</button></div></div></div><div class="card-footer"><div class="footer-wrapper"><div>Tanggal jatuh tempo</div><div class="date">30 Juni 2019</div></div></div></div></div><div class="content-right"><div class="card-container"><div class="card-body"><div class="body-wrapper"><div class="content"><p class="title">Penggunaan bulan ini</p><div class="usage"><div class="details"><img src="./Indihome_files/ic-usage-wifi.43d16cf6.svg" alt=""><h3><div>450 </div><span class="small"> GB</span></h3></div><div class="details"><img src="./Indihome_files/ic-usage-wifi.43d16cf6.svg" alt=""><h3><div>450 </div><span class="small"> MENIT</span></h3></div></div><a class="detail" href="http://localhost:3000/bill"><p>LIHAT DETAIL</p><img src="./Indihome_files/ic-chevron-red.ec468e03.svg" alt=""></a></div><div class="element"></div></div></div><div class="card-footer"><div class="footer-wrapper"><div>IndiHome Triple Play Value 10 Mbps + 92 channel + 1000 minutes</div></div></div></div></div></div></div><div><div class="notification-container"><div class="notification-wrapper"><div class="notification-content"><img class="exclamation" src="./Indihome_files/grfx-action-warning.e2df7491.svg" alt=""><div class="notification-info"><h5>Quota Internet anda sudah habis.</h5><p>Tap here to top up.</p></div></div><img src="./Indihome_files/ic-chevron-white.158614bb.svg" alt=""></div></div></div><div class="featured-container"><div class="featured-poster" style="background-image: url(&quot;/static/media/featured-bgimg.797202d3.png&quot;);"><div class="featured-bg" style="background-image: url(&quot;/static/media/featured-bg.0d5c212c.png&quot;);"><div class="featured-wrapper"><h5>Have a need for speed?</h5><p>Upgrade your speed for 10% off</p></div></div></div></div><div class="offer-container"><div class="offer-wrapper"><p>Save 30% by subscribing to 2 minipacks for 1 year!</p><a class="link" href="http://localhost:3000/details">VIEW DETAILS</a></div></div><div class="subscribe-container"><div class="subscribe-wrapper"><div class="content"><p class="title-small">SUBSCRIBE &amp; WATCH</p><div class="logo"><img class="stream-logo" src="./Indihome_files/iflix-logo.3420b219.svg" alt="iflix"><img class="stream-logo" src="./Indihome_files/hooq-logo.e9882f79.png" alt="Hooq"><img class="stream-logo" src="data:image/png;base64,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" alt="Catchplay"></div><h1>Subscribe dan nonton langsung di TV atau perangkat Anda!</h1><p class="text-small">Tonton berbagai acara dan film internasional dan domestik dengan berlangganan mulai dari <span class="font-weight-bold">Rp100.000/bulan.</span></p><button class="btn-primary">SUBSCRIBE</button></div><div class="poster"><div class="poster-img"></div></div></div></div><div class="footer-container"><div class="footer-wrapper"><div class="first-content"><h6>POWERED BY</h6><img src="./Indihome_files/telkom-indonesia-logo.77dea77b.png" class="logo" alt=""><h6>DOWNLOAD MYINDIHOME APP</h6><div class="store"><img src="./Indihome_files/download-on-app-store-png-open-2000.e7ddcc40.png" alt=""><img src="./Indihome_files/640px-Google_Play_Store_badge_EN.svg.77225824.png" alt=""></div></div><div class="second-content"><h6>QUICK LINKS</h6><ul><li>Lastest news</li><li>Check my bills</li><li>Check complaint status</li><li>myIndiHome app</li><li>Partnership</li></ul></div><div class="third-content"><h6>NEWSLETTER</h6><input type="text" class="newsletter" placeholder="Berlangganan ke newsletter"><button class="btn-submit">SUBMIT</button><h6 style="margin-top: 2em;">CONNECT WITH US</h6><div class="contact"><div class="phone"><img src="./Indihome_files/ic-web-profile-default.66d1fd00.svg" alt=""><div class="contact-center"><h5 class="text-contact">CONTACT CENTER</h5><small>Sn-M 06:00-20:00</small></div></div><div class="phone-number"><h4>147</h4></div></div><div class="social-media"><img src="./Indihome_files/ic-fb.5bf74c91.svg" alt=""><img src="./Indihome_files/ic-ig.14bc258d.svg" alt=""><img src="./Indihome_files/ic-tw.ecca9ba1.svg" alt=""></div></div></div></div><div class="copyright-container"><div class="copyright-wrapper"><div class="copyright"><p>© Copyright 2019 PT Telekomunikasi Indonesia (Persero) Tbk All Right Reserved.</p></div><div class="terms"><a href="http://localhost:3000/terms">Kebijakan Privasi</a><a href="http://localhost:3000/conditions">Syarat &amp; Ketentuan</a></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./Indihome_files/bundle.js"></script><script src="./Indihome_files/1.chunk.js"></script><script src="./Indihome_files/main.chunk.js"></script><script src="./Indihome_files/main.7f06f53b04bf2b9bd404.hot-update.js"></script>
+
+</body></html>

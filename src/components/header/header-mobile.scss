@@ -1,0 +1,108 @@
+@media screen and (max-width: 768px){
+    .header-container{
+        .header-wrapper{
+    
+            nav{
+                height: 50px;
+    
+                .nav-logo{
+                    width: 100px;
+                }
+        
+                .content-menus{
+                    display: none;
+                }
+
+                .toggle-profile, .toggle-button{
+                    display: block;
+                }
+            }
+
+        }
+    }
+
+    .mobile-container{
+        background-color: white;
+    }
+
+    .mobile{
+        margin: 0 3%;
+        height: auto;
+        padding: 1% 0;
+
+        .content-toggle{
+            ul{
+                display: block;
+                justify-content: flex-start;
+                align-items: flex-start;
+                list-style-type: none;
+                
+                li{
+                    margin: 1em 0;
+                }
+
+                .dropdown-list{
+                    display: flex;
+
+                    .arrow{
+                        margin-left: 0.5em;
+                    }
+                }
+
+                .group-items{
+                    margin-top: 1.5em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    a{
+                        margin-right: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .fade-in {
+        animation-duration: 1s;
+        animation-name: fadeIn;
+        display: block;
+    }
+    
+    .fade-out {
+        animation-duration: 1s;
+        animation-name: fadeOut;
+        display: none;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+            display: none;
+        }
+        
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            display: block;
+        }
+    }
+    
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+            display: block;
+        }
+        
+        to {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+            display: none;
+        }
+    }
+}

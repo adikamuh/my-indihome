@@ -1,0 +1,40 @@
+.featuredComponent-container{
+    height: 140px;
+    width: 100%;
+    margin-right: 2em;
+    
+    
+    .featuredComponent-poster{
+        border-radius: 9px;
+
+        background-repeat: no-repeat;
+        background-position: right;
+
+        .featured-bg{
+            height: 140px;
+            width: 100%;
+            border-radius: 9px 0 0 9px;
+
+            background-position: left;
+            background-repeat: no-repeat;
+            
+            .featured-wrapper{
+                padding: 1.5em 1em;
+                width: 35%;
+
+
+                h5{
+                    font-size: 15px;
+                    color: white;
+                    margin: auto;
+                }
+                p{
+                    font-family: Ubuntu;
+                    font-size: 12px;
+                    line-height: 1.43;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {Fragment, useState} from 'react'
+import {makeAnimationSlideLeft,makeAnimationSlideUpDown} from '../animated-visibility/animated-visibility'
+import HeaderMobile from '../header-mobile/header-mobile'
 
 import './header.scss'
 import { GoThreeBars } from 'react-icons/go'
@@ -9,14 +11,13 @@ import inbox from '../../assets/ic-web-inbox-default.svg'
 import profile from '../../assets/ic-web-profile-default.svg'
 import history from '../../assets/ic-web-history-default.svg'
 import downArrow from '../../assets/down-arrow.svg'
-import HeaderMobile from '../header-mobile/header-mobile'
 
 class Header extends React.Component{
     constructor(){
         super()
 
         this.state = {
-            isToggleOn: false,
+            isNavOpen: false,
             tes: 'abv',
             tes2: 'abe',
             icons : {
@@ -29,10 +30,12 @@ class Header extends React.Component{
         }
 
         this.handleNavbarToggle = this.handleNavbarToggle.bind(this)
+
+        const AnimatedNavbar = makeAnimationSlideUpDown(HeaderMobile)
     }
 
     handleNavbarToggle(){
-        this.setState({ isToggleOn: !this.state.isToggleOn })
+        this.setState({ isToggleOn: !this.state.isNavOpen })
     }
 
 
@@ -59,14 +62,8 @@ class Header extends React.Component{
                             <GoThreeBars size="2em" />
                         </button>
                     </nav>
-                    <div 
-                        className={[
-                            this.state.isToggleOn ? 'fade-in' : 'fade-out'
-                        ].filter(x => !!x).join(' ')}
-                        // style={{display: this.state.isToggleOn ? 'block' : 'none'}}
-                        >
-                            <HeaderMobile icons={this.state.icons} isToggle={this.state.isToggleOn}/>
-                    </div>
+                    <AnimatedNavbar open={this.state.isNavOpen} />
+                    {/* <HeaderMobile icons={this.state.icons} isToggle={this.state.isNavOpen}/> */}
                 </div>
             </div>
         )
