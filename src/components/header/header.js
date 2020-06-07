@@ -1,5 +1,4 @@
 import React, {Fragment, useState} from 'react'
-import {makeAnimationSlideUpDown} from '../animated-visibility/animated-visibility'
 
 import './header.scss'
 import './header-mobile.scss'
