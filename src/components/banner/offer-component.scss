@@ -1,17 +1,17 @@
-.offer-container{
-    margin-left: 8%;
-    margin-top: 3em;
+.offerComponent-container{
+    margin-right: 3em;
     
     width: 270px;
     height: 270px;
 
     background-color: black;
+    background-repeat: no-repeat;
     border-radius: 5px;
 
     display: flex;
     align-items: flex-end;
 
-    .offer-wrapper{
+    .offerComponent-wrapper{
         display: block;
 
         padding: 1.5em;

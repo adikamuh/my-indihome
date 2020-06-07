@@ -10,6 +10,7 @@ class Featured extends React.Component{
     render(){
         return(
             <div className="featured-container">
+                <p className="title-small" style={{marginLeft : "8%"}}>RECOMMENDED FOR YOU</p>
                 <Carousel
                     itemWidth = {300}
                     slidesPerPage = {3}

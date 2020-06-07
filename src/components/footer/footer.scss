@@ -13,8 +13,14 @@
 
         .first-content{
 
-            .logo{
+            .powered-by{
                 width: 232px;
+                height: 165px;
+                margin-bottom: 3em;
+
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: top;
             }
 
             .store{
@@ -48,7 +54,7 @@
         .third-content{
             width: 368px;
 
-            .newsletter{
+            input[type=text]{
                 width: 100%;
                 height: 52px;
                 border-radius: 8px;
@@ -56,9 +62,19 @@
                 background-color: #ffffff;
 
                 border: none;
+                padding-left: 2em;
             }
+
+            ::placeholder{
+                padding: 0;
+            }
+
+            input[type=text]:focus{
+                border: 1px solid red;
+            }
+
             .btn-submit{
-                margin-left: -92px;
+                margin-left: -114px;
                 
                 width: 85px;
                 height: 40px;

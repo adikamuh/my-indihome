@@ -16,8 +16,14 @@ class Footer extends React.Component{
             <div className="footer-container">
                 <div className="footer-wrapper">
                     <div className="first-content">
-                        <h6>POWERED BY</h6>
-                        <img src={logo} className="logo" alt=""></img>
+                        <div 
+                            className="powered-by"
+                            style={{
+                                backgroundImage : 'url('+logo+')'
+                            }}
+                        >
+                            <h6>POWERED BY</h6>
+                        </div>
 
                         <h6>DOWNLOAD MYINDIHOME APP</h6>
                         <div className="store">
