@@ -14,9 +14,11 @@
     "proptypes": "^1.1.0",
     "react": "^16.13.1",
     "react-animated-css": "^1.2.1",
+    "react-carousel": "^4.3.0",
     "react-dom": "^16.13.1",
     "react-fontawesome": "^1.7.1",
     "react-icons": "^3.10.0",
+    "react-img-carousel": "^1.7.0",
     "react-scripts": "3.4.1",
     "serve": "^11.3.1"
   },

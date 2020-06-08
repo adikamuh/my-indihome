@@ -4,11 +4,11 @@
     .userInfo-wrapper{
         margin: 0 8%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         // flex-wrap: wrap;
         
-        .content-right{
-            margin-left: auto;
+        .content-left, .content-right{
+            width: 40vw;
         }
     }
 }
@@ -19,8 +19,9 @@
         .userInfo-wrapper{
             display: block;
 
-            .content-right{
+            .content-right, .content-left{
                 margin-top: 1em;
+                width: auto;
             }
         }
     }

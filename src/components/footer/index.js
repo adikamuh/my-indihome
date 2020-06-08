@@ -45,8 +45,10 @@ class Footer extends React.Component{
 
                     <div className="third-content">
                         <h6>NEWSLETTER</h6>
-                        <input type="text" className="newsletter" placeholder="Berlangganan ke newsletter"></input>
-                        <button className="btn-submit">SUBMIT</button>
+                        <div className="button-in-input">
+                            <input type="text" className="newsletter" placeholder="Berlangganan ke newsletter"></input>
+                            <button className="btn-submit">SUBMIT</button>
+                        </div>
 
                         <h6 style={{marginTop:'2em'}}>CONNECT WITH US</h6>
                         <div className="contact">

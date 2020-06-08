@@ -1,6 +1,6 @@
 .footer-container{
-    height: 350px;
-    padding-top: 3em;
+    // height: 350px;
+    padding: 3em 0;
 
     background-color: #333435;
 
@@ -54,67 +54,67 @@
         .third-content{
             width: 368px;
 
-            input[type=text]{
+            .button-in-input{
                 width: 100%;
-                height: 52px;
-                border-radius: 8px;
-                box-shadow: 0 5px 10px 0 #00000033;
-                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
 
-                border: none;
-                padding-left: 2em;
-            }
-
-            ::placeholder{
-                padding: 0;
-            }
-
-            input[type=text]:focus{
-                border: 1px solid red;
-            }
-
-            .btn-submit{
-                margin-left: -114px;
+                // padding: 2px;
                 
-                width: 85px;
-                height: 40px;
-                font-family: Ubuntu;
-                font-size: 16px;
-                font-weight: bold;
-                letter-spacing: 0.86px;
-                text-align: center;
-                color: #ffffff;
-                cursor: pointer;
-
-                border-radius: 6px;
-                border: none;
-                background-color: #ee3124;
+                input[type=text]{
+                    // width: 100%;
+                    height: 52px;
+                    border-radius: 8px;
+                    box-shadow: 0 5px 10px 0 #00000033;
+                    background-color: #ffffff;
+    
+                    border: none;
+                    padding-left: 2em;
+                    padding-right: 8em;
+                    flex-grow: 2;
+                }
+    
+                input[type=text]:focus{
+                    border: none;
+                    outline: none;
+                }
+    
+                .btn-submit{
+                    
+                    width: 85px;
+                    height: 40px;
+                    font-family: Ubuntu;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 0.86px;
+                    text-align: center;
+                    color: #ffffff;
+                    cursor: pointer;
+    
+                    border-radius: 6px;
+                    border: none;
+                    background-color: #ee3124;
+                    margin-left: -6em;
+                }
+    
+                ::placeholder{
+                    // padding-left: 1em;
+                    opacity: 0.3;
+    
+                    font-family: Ubuntu;
+                    font-size: 17px;
+                    color: #333333;
+                }
             }
 
-            .btn-submit:active{
-                border: none;
-                padding-left: 1em;
-            }
-
-            ::placeholder{
-                padding-left: 1em;
-                opacity: 0.3;
-
-                font-family: Ubuntu;
-                font-size: 17px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: #333333;
-            }
 
             .contact{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 0.5em 1em;
+                // width: 100%;
                 
                 border-radius: 5px;
                 border: solid 1px #ffffff;
@@ -158,6 +158,18 @@
                 img{
                     margin-right: 0.5em;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer-container{
+        .footer-wrapper{
+            display: block;
+
+            .first-content, .second-content{
+                margin-bottom: 4em;
             }
         }
     }

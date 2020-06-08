@@ -15,7 +15,7 @@ class PosterCarousel extends React.Component{
                     display: 'flex',}}
             >
                 <div>
-                    <img width="100" src={iflixLogo}></img>
+                    <img width="100" src={iflixLogo} alt=""></img>
                     <h4>819237  9031287</h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>

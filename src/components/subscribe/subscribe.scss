@@ -1,26 +1,17 @@
 .subscribe-container{
     margin-top: 3em;
-    width: 100%;
     background-color: white;
-    align-items: center;
-    display: flex;
+    padding: 2em 0;
 
     .subscribe-wrapper{
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row;
-        align-content: center;
-
-        margin: 4em 8%;
+        margin: 4em 0;
+        margin-left: 8%;
 
         .content{
             display: flex;
-            flex-flow: row;
-            align-content: center;
-            justify-content: space-between;
 
             .content-left{
-                width: 700px;
+                width: 80vw;
                 margin-right: 2em;
 
                 .logo{
@@ -36,9 +27,40 @@
                     }
                 }
             }
+        }
+    }
+}
 
-            .BrainhubCarousel__container{
-                max-width: 510px;
+@media screen and (max-width: 768px){
+    .subscribe-container{
+        .subscribe-wrapper{
+            .content{
+                display: block;
+                .content-left{
+                    margin-bottom: 3em;
+                }
+
+                .BrainhubCarouselItem{
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px){
+    .subscribe-container{
+        .subscribe-wrapper{
+            .content{
+                .content-left{
+                    .logo{
+                        display: block;
+                        width: 10%;
+                        img{
+                            margin-top: 1em;
+                        }
+                    }
+                }
             }
         }
     }
