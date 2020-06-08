@@ -10,9 +10,12 @@
         .avatar{
             width: 80px;
             height: 80px;
-            border-radius: 40px;
-            background-color: black;
+            border-radius: 100%;
+            // background-color: black;
 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             margin-right: 2em;
         }
 
@@ -20,11 +23,6 @@
 
             p{
                 margin: 0;
-            }
-            .greeting{
-                font-size: 14px;
-                letter-spacing: 1px;
-                opacity: 50%;
             }
             .profile{
                 margin: 0.5em 0;

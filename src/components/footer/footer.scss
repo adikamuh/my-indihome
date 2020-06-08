@@ -122,9 +122,11 @@
                 .phone{
                     display: flex;
                     justify-content: flex-start;
+                    align-items: center;
 
                     img{
                         width: 30px;
+                        height: 30px;
                     }
 
                     .contact-center{
