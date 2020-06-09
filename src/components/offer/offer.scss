@@ -2,9 +2,13 @@
     margin-top: 3em;
 
     .BrainhubCarousel__container{
+        // justify-content: flex-start;
         .BrainhubCarousel__trackContainer{
             .BrainhubCarousel__track[style]{
                 margin-left: 8% !important;
+                .BrainhubCarouselItem{
+                    justify-content: flex-start;
+                }
             }
         }
     }

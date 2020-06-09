@@ -50,7 +50,7 @@ class Footer extends React.Component{
                             <button className="btn-submit">SUBMIT</button>
                         </div>
 
-                        <h6 style={{marginTop:'2em'}}>CONNECT WITH US</h6>
+                        <h6 style={{marginTop:'3em'}}>CONNECT WITH US</h6>
                         <div className="contact">
                             <div className="phone">
                                 <img src={phone} alt=""></img>

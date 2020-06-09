@@ -11,8 +11,10 @@ function OfferComponent(props) {
             style={{
                 backgroundImage: 'url('+offerBg+')'
             }}
-        >
-            <div className="offerComponent-wrapper">
+            >
+            <div 
+                className="offerComponent-wrapper"
+            >
                 <p>Save 30% by subscribing to 2 minipacks for 1 year!</p>
                 <a className="link" href="details">VIEW DETAILS</a>
             </div>

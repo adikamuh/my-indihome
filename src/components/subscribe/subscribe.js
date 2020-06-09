@@ -31,6 +31,7 @@ class Subscribe extends React.Component{
                         </div>
                         <Carousel
                             itemWidth = {300}
+                            itemHeight = {200}
                             draggable
                             keepDirectionWhenDragging
                         >

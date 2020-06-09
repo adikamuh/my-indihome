@@ -10,6 +10,7 @@ import Featured from './components/featured/featured';
 import Subscribe from './components/subscribe/subscribe';
 import UserInfo from './components/user-info/user-info';
 import Offer from './components/offer/offer';
+import PosterComponent from './components/poster-component/poster-component';
 
 function App() {
   return (

@@ -1,16 +1,16 @@
 .offerComponent-container{
-    margin-right: 3em;
+    // margin-right: 3em;
     
-    width: 270px;
     height: 270px;
+    width: 270px;
 
+    border-radius: 5px;
     background-color: black;
     background-repeat: no-repeat;
-    border-radius: 5px;
-
+    
     display: flex;
     align-items: flex-end;
-
+    
     .offerComponent-wrapper{
         display: block;
 
