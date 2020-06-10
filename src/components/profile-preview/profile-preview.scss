@@ -1,5 +1,6 @@
 .profile-preview-container{
-    margin-top: 3em;
+    padding-top: 8em;
+    // margin-top: 80px;
 
     .profile-preview-wrapper{
         margin-left: 8%;
@@ -22,11 +23,13 @@
         .content{
 
             p{
+                color: white;
                 margin: 0;
             }
 
             .title-small{
                 font-weight: bold;
+                opacity: 50%;
             }
 
             .profile{
@@ -43,5 +46,11 @@
                 letter-spacing: 0;
             }
         }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .profile-preview-container{
+        padding-top: 6em;
     }
 }

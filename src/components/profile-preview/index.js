@@ -26,7 +26,7 @@ export default class ProfilePreview extends React.Component {
                         }}
                     ></div>
                     <div className="content">
-                        <p className="greeting" className="title-small">{this.state.greeting}</p>
+                        <p className="greeting title-small">{this.state.greeting}</p>
                         <a className="profile" href="profile">
                             <p>{this.state.name}</p>
                             <img src={rightArrow} alt=""></img>

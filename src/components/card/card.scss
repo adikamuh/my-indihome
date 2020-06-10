@@ -22,7 +22,7 @@
             justify-content: space-between;
         }
         p{
-            margin: 3% 0;
+            margin: 0;
         }
 
         .content{
@@ -32,6 +32,7 @@
                 font-size: 15px;
                 font-weight: normal;
                 color: #b2b4b5;
+                margin-bottom: 0.7em;
             }
             .bill{
                 font-size: 34px;
@@ -43,6 +44,7 @@
                 display: flex;
                 justify-content: flex-start;
                 text-decoration: none;
+                margin-top: 0.5em;
 
                 font-size: 16px;
                 font-weight: bold;
