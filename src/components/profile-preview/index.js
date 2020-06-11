@@ -4,6 +4,8 @@ import './profile-preview.scss'
 
 import rightArrow from '../../assets/ic-chevron-white.svg'
 import avatar from '../../assets/avatar.png'
+import notifDark from '../../assets/ic_notif_dark.svg'
+import scanDark from '../../assets/ic_scan_dark.svg'
 
 export default class ProfilePreview extends React.Component {
     constructor(){
@@ -32,6 +34,11 @@ export default class ProfilePreview extends React.Component {
                             <img src={rightArrow} alt=""></img>
                         </a>
                         <p className="points">{this.state.points} pts</p>
+                    </div>
+
+                    <div className="notif-mobile">
+                        <img className="scan" src={scanDark} alt="scan"></img>
+                        <img className="notif" src={notifDark} alt="notig"></img>
                     </div>
                 </div>
             </div>

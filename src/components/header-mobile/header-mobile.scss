@@ -1,101 +1,51 @@
 @media screen and (max-width: 768px){
-    .header-container{
-        .header-wrapper{
-    
-            nav{
-                height: 50px;
-    
-                .nav-logo{
-                    width: 100px;
-                }
-        
-                .content-menus{
-                    display: none;
-                }
+    .navMobile-container{
+        position: fixed;
+        bottom: 0;
+        overflow: hidden;
+        z-index: 9999;
 
-                .toggle-profile, .toggle-button{
-                    display: block;
-                }
-            }
+        background-color: white;
+        width: 100%;
+        height: 48px;
+        .navMobile-wrapper{
+            height: inherit;
+            box-sizing: border-box;
+            .navMobile-list{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                list-style-type: none;
+                box-sizing: border-box;
 
-            .mobile{
-                height: auto;
-                padding: 1% 0;
+                margin: 0;
+                padding: 0;
+                height: inherit;
 
-                .content-toggle{
-                    ul{
-                        display: block;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        list-style-type: none;
-                        
-                        li{
-                            margin: 0.5em 0;
-                        }
+                .navMobile-items{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
 
-                        .dropdown-list{
-                            display: flex;
+                    width: 20%;
 
-                            .arrow{
-                                margin-left: 0.5em;
-                            }
-                        }
+                    h6{
+                        margin: 0;
+                        margin-top: 0.3em;
 
-                        .group-items{
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-start;
+                        font-weight: normal;
+                        letter-spacing: 0;
+                        opacity: 1;
+                        color: #b2b4b5;
+                    }
 
-                            a{
-                                margin-right: 1em;
-                            }
-                        }
+                    .active{
+                        font-weight: bold;
+                        opacity: 1;
+                        color: #191a1a;
                     }
                 }
             }
-        }
-    }
-
-    .fade-in {
-        animation-duration: 1s;
-        animation-name: fadeIn;
-        display: block;
-    }
-    
-    .fade-out {
-        animation-duration: 1s;
-        animation-name: fadeOut;
-        display: none;
-    }
-    
-    .hide {
-        display: none;
-    }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translate3d(0, -100%, 0);
-            display: none;
-        }
-        
-        to {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-            display: block;
-        }
-    }
-    
-    @keyframes fadeOut {
-        from {
-            opacity: 1;
-            display: block;
-        }
-        
-        to {
-            opacity: 0;
-            transform: translate3d(0, -100%, 0);
-            display: none;
         }
     }
 }

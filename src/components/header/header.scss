@@ -18,6 +18,7 @@
             justify-content: space-between;
             align-items: center;
             height: 80px;
+            width: 100%;
                 
             .nav-logo{
                 width: 210px;
@@ -67,6 +68,22 @@
             .toggle-profile, .toggle-button{
                 display: none;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-logo{
+        width: 150px !important;
+    }
+
+    .content-menus{
+        li{
+            margin-left: 1em !important;
+        }
+    
+        a{
+            font-size: 12px !important;
         }
     }
 }

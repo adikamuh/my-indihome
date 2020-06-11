@@ -30,6 +30,9 @@
                 .BrainhubCarousel__trackContainer{
                     .BrainhubCarousel__track[style]{
                         margin-left: 5% !important;
+                        li{
+                            justify-content: flex-start;
+                        }
                     }
                 }
             }

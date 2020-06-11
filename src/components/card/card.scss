@@ -106,7 +106,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 1em 2em;
+            padding: 0 2em;
+            height: 100%;
+            box-sizing: border-box;
 
             .text-footer{
                 font-size: 15px;
@@ -121,10 +123,24 @@
     }
 }
 
+@media screen and (max-width:1259px){
+    .card-container{
+        .card-footer{
+            .footer-wrapper{
+                .text-footer{
+                    font-size: 12px ;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px){
     .card-container{
         width: 300px;
         height: 112px;
+
+        margin-bottom: 1em;
         .card-body{
             height: 65%;
             .body-wrapper{

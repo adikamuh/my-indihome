@@ -39,7 +39,7 @@
     .subscribe-container{
         padding: 0.5em 0;
         .subscribe-wrapper{
-            margin: 0;
+            // margin: 0;
             .content{
                 display: block;
                 .content-left{
@@ -57,7 +57,9 @@
 @media screen and (max-width: 767px){
     .subscribe-container{
         margin-top: 1.5rem;
+        background-color: #f2f2f2;
         .subscribe-wrapper{
+            margin: 0;
             .content{
                 width: 100%;
                 box-sizing: border-box;

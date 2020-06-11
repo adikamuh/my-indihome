@@ -46,31 +46,43 @@
                 letter-spacing: 0;
             }
         }
+
+        .notif-mobile{
+            display: none;
+        }
     }
 }
 
 @media screen and (max-width: 768px){
     .profile-preview-container{
-        padding-top: 6em;
+        padding-top: 7em;
     }
 }
 
 @media screen and (max-width: 425px){
     .profile-preview-container{
+        padding-top: 2rem;
+        
         .profile-preview-wrapper{
+            margin: 0 5%;
+            .notif-mobile{
+                display: block;
+            }
             .avatar{
                 width: 40px;
                 height: 40px;
                 margin-right: 1rem;
             }
             .content{
+                margin-right: auto;
                 .greeting{
                     display: none;
                 }
                 .profile{
-                    font-size: 16px;
+                    font-size: 15px;
                     font-weight: bold;
                     margin: 0;
+                    margin-bottom: 0.2em;
 
                     img{
                         margin-left: 0.5em;
@@ -79,7 +91,12 @@
                     }
                 }
                 .points{
-                    font-size: 15px;
+                    font-size: 14px;
+                }
+            }
+            .notif-mobile{
+                .notif{
+                    margin-left: 0.8rem;
                 }
             }
         }

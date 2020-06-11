@@ -64,8 +64,7 @@ class UserInfo extends React.Component{
                     <div className="userInfo-container">
                         <div className="userInfo-wrapper">
                             <Carousel
-                                itemWidth = {300}
-                                offset = {14}
+                                itemWidth = {310}
                             >
                                 <Bill />
                                 <Usage />

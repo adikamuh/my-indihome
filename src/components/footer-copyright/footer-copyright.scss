@@ -44,3 +44,22 @@
         }
     }
 }
+
+@media screen and (max-width: 425px){
+    .copyright-container{
+        margin-bottom: 48px;
+        .copyright-wrapper{
+            .copyright{
+                font-size: 10px;
+            }
+            .terms{
+                display: flex;
+                flex-direction: column;
+            }
+            a{
+                font-size: 14px;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

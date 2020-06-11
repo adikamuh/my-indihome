@@ -21,6 +21,7 @@
         }
 
         .first-content{
+            width: 40%;
 
             .powered-by{
                 width: 232px;
@@ -41,6 +42,7 @@
         }
 
         .second-content{
+            width: 20%;
             ul{
                 list-style-type: none;
                 text-align: left;
@@ -62,7 +64,7 @@
         }
 
         .third-content{
-            width: 368px;
+            width: 30%;
 
             .button-in-input{
                 width: 100%;
@@ -74,7 +76,7 @@
                 // padding: 2px;
                 
                 input[type=text]{
-                    width: 368px;
+                    width: 100%;
                     height: 60px;
                     border-radius: 8px;
                     box-shadow: 0 5px 10px 0 #00000033;
@@ -177,13 +179,166 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+    .footer-container{
+        .footer-wrapper{
+            .second-content{
+                ul{
+                    li{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .third-content{
+                .button-in-input{
+                    input[type=text]{
+                        height: 50px;
+                        padding-left: 1em;
+                    }
+                    .btn-submit{
+                        height: 30px;
+                        font-size: 14px;
+                        margin-left: -7em;
+                    }
+                }
+                .contact{
+                    .text-contact{
+                        font-size: 15px;
+                    }
+                    small{
+                        font-size: 13px;
+                    }
+                    .phone-number{
+                        font-size: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px){
     .footer-container{
         .footer-wrapper{
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
 
-            .first-content, .second-content{
-                margin-bottom: 4em;
+            .first-content{
+                width: 65%;
+                .powered-by{
+                    margin-bottom: 1rem;
+                }
+                
+            }
+            .second-content{
+                width: 35%;
+                ul{
+                    li{
+                        margin-top: 1.6em;
+                    }
+                }
+            }
+            .third-content{
+                width: 100%;
+                margin-top: 2rem;
+                
+                .button-in-input{
+                    input[type=text]{
+                        padding-left: 1.5em;
+                    }
+                    ::placeholder{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .footer-container{
+        .footer-wrapper{
+            .first-content{
+                .powered-by{
+                    width: 80%;
+                    height: 130px;
+                }
+                .store{
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+            .second-content{
+                ul{
+                    li{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .third-content{
+                margin-top: 1rem;
+                .button-in-input{
+                    input[type=text]{
+                        height: 40px;
+                        padding-left: 1em;
+                    }
+                    .btn-submit{
+                        height: 30px;
+                        margin-left: -91px;
+
+                        font-size: 14px;
+                    }
+                    ::placeholder{
+                        font-size: 14px;
+                    }
+                }
+
+                .contact{
+                    .text-contact{
+                        font-size: 12px;
+                    }
+                    small{
+                        font-size: 10px;
+                    }
+                    h4{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px){
+    .footer-container{
+        .footer-wrapper{
+            .first-content, .second-content, .third-content{
+                width: 100%;
+            }
+
+            .first-content{
+                .store{
+                    img{
+                        width: 40%;
+                    }
+                }
+            }
+
+            .second-content{
+                margin-top: 1rem;
+                ul{
+                    li{
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+
+            .third-content{
+                .button-in-input{
+                    margin-top: 0.5rem;
+                }
             }
         }
     }
