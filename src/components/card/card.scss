@@ -1,6 +1,5 @@
 .card-container{
     width: 100%;
-    min-width: 385px;
     height: 200px;
     border-radius: 8px;
     box-shadow: 0 5px 10px 0 #191a1a26;
@@ -9,6 +8,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    // margin-right: 2rem;
 
     .card-body{
         // padding: 1em;
@@ -24,9 +25,19 @@
         p{
             margin: 0;
         }
+        .element{
+            display: none;
+        }
 
         .content{
             align-items: flex-start;
+            width: 100%;
+            
+            .content-title{
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
 
             .title{
                 font-size: 15px;
@@ -55,8 +66,8 @@
             // USAGE
             .usage{
                 display: flex;
-                justify-content: space-between;
-                align-items: center;;
+                justify-content: flex-start;
+                align-items: center;
                 // margin: 3% 0;
 
                 .details{
@@ -97,7 +108,7 @@
             justify-content: space-between;
             padding: 1em 2em;
 
-            div{
+            .text-footer{
                 font-size: 15px;
                 color: #b2b4b5;
             }
@@ -105,6 +116,105 @@
                 font-size: 18px;
                 font-weight: bold;
                 color: #191a1a;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card-container{
+        width: 300px;
+        height: 112px;
+        .card-body{
+            height: 65%;
+            .body-wrapper{
+                height: 100%;
+                padding: 0.8em 1em;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .content{
+                    width: 268px;
+                    position: absolute;
+                    z-index: 1;
+                    box-sizing: content-box;
+                    .content-title{
+                        width: 100%;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                    }
+
+                    .title{
+                        font-size: 12px;
+                        // margin-top: 0.5em;
+                        margin-bottom: 0.5em;
+                        margin-right: auto;
+                    }
+                    .bill{
+                        font-size: 22px;
+                    }
+                    .detail{
+                        display: none;
+                    }
+
+                    .usage{
+                        .details{
+                            img{
+                                width: 18px;
+
+                                margin-right: 0.3em;
+                            }
+                            h3{
+                                font-size: 22px;
+                                .small{
+                                    font-size: 10px;
+                                    margin-top: 0.3em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .element{
+                    display: block;
+                    position: relative;
+                    z-index: 0;
+                    margin-left: auto;
+                    margin-top: 1em;
+                    img{width: 18px;}
+                }
+            }
+        }
+
+        .card-footer{
+            height: 35%;
+            box-sizing: border-box;
+            .footer-wrapper{
+                padding: 0 1em;
+                height: 100%;
+                box-sizing: border-box;
+                .text-footer{
+                    font-size: 10px;
+                }
+                .date{
+                    font-size: 12px;
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .card-container{
+        width: 270px;
+        margin-right: 10px;
+        .card-body{
+            .body-wrapper{
+                .content{
+                    width: 238px;
+                }
             }
         }
     }

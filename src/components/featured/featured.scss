@@ -9,3 +9,20 @@
         }
     }
 }
+
+@media screen and (max-width:425px){
+    .featured-container{
+        margin-top: 2rem;
+    
+        .BrainhubCarousel__container{
+            .BrainhubCarousel__trackContainer{
+                .BrainhubCarousel__track[style]{
+                    margin-left: 5% !important;
+                    li{
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}

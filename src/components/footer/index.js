@@ -43,7 +43,7 @@ class Footer extends React.Component{
                         </ul>
                     </div>
 
-                    <div className="third-content">
+                    {/* <div className="third-content">
                         <h6>NEWSLETTER</h6>
                         <div className="button-in-input">
                             <input type="text" className="newsletter" placeholder="Berlangganan ke newsletter"></input>
@@ -69,7 +69,7 @@ class Footer extends React.Component{
                             <img src={ig} alt=""></img>
                             <img src={twitter} alt=""></img>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )

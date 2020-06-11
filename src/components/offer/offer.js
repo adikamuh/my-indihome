@@ -11,7 +11,7 @@ class Offer extends React.Component{
             <div className="offer-container">
                 <p className="title-small" style={{marginLeft : "8%"}}>PENAWARAN TERBARU</p>
                 <Carousel
-                    itemWidth = {300}
+                    itemWidth = {130}
                     draggable
                     keepDirectionWhenDragging
                 >

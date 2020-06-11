@@ -12,3 +12,15 @@
     color: #ffffff;
     padding: auto;
 }
+
+@media screen and (max-width: 768px){
+    .filled-container{
+        height: 18px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        
+        padding: 0 0.7em;
+        font-size: 8px;
+    }
+}

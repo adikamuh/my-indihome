@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './card.scss'
-// import Filled from '../label/filled'
 
 import redArrow from '../../assets/ic-chevron-red.svg'
 import wifi from '../../assets/ic-usage-wifi.svg'
@@ -24,7 +23,7 @@ function Usage(props){
                             <div className="details">
                                 <img src={wifi} alt=""></img>
                                 <h3>
-                                    <div>450 </div>
+                                    <div>250 </div>
                                     <span className="small"> MENIT</span>
                                 </h3>
                             </div>
@@ -35,13 +34,13 @@ function Usage(props){
                         </a>
                     </div>
                     <div className="element">
-                        {/* <Filled /> */}
+                    <img src={redArrow} alt=""></img>
                     </div>
                 </div>
             </div>
             <div className="card-footer">
                 <div className="footer-wrapper">
-                    <div>IndiHome Triple Play Value 10 Mbps + 92 channel + 1000 minutes</div>
+                    <div className="text-footer">IndiHome Triple Play Value 10 Mbps + 92 channel + 1000 minutes</div>
                 </div>
             </div>
         </div>

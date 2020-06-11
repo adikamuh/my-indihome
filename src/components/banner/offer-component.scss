@@ -5,7 +5,6 @@
     width: 270px;
 
     border-radius: 5px;
-    background-color: black;
     background-repeat: no-repeat;
     
     display: flex;
@@ -20,6 +19,36 @@
 
         p{
             margin-top: auto;
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    .offerComponent-container{
+        width: 120px;
+        height: auto;
+        display: block;
+        
+        
+        .offerComponent-wrapper{
+            height: 120px;
+            width: 120px;
+            border-radius: 5px;
+
+            box-sizing: border-box;
+
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        p{
+            font-size: 12px;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        .link{
+            letter-spacing: normal;
+            font-size: 12px;
         }
     }
 }

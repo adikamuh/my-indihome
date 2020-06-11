@@ -115,3 +115,10 @@ h6{
 @media screen and (max-width: 768px){
   .body{background-size: 768px;}
 }
+
+@media screen and (max-width: 425px){
+  .title-small{
+    font-size: 12px;
+    margin-left: 5% !important;
+  }
+}

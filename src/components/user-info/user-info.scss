@@ -13,15 +13,42 @@
     }
 }
 
-@media screen and (max-width: 1120px){
+@media screen and (max-width: 425px){
     .userInfo-container{
         
         .userInfo-wrapper{
             display: block;
+            margin-left: 0;
+            margin-right: 0;
 
             .content-right, .content-left{
                 margin-top: 1em;
                 width: auto;
+            }
+
+            .BrainhubCarousel__container{
+                .BrainhubCarousel__trackContainer{
+                    .BrainhubCarousel__track[style]{
+                        margin-left: 5% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .userInfo-container{
+        .userInfo-wrapper{
+            margin-left: 0;
+            margin-right: 0;
+
+            .BrainhubCarousel__container{
+                .BrainhubCarousel__trackContainer{
+                    .BrainhubCarousel__track[style]{
+                        margin-left: 5% !important;
+                    }
+                }
             }
         }
     }

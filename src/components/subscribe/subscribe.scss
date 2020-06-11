@@ -37,7 +37,9 @@
 
 @media screen and (max-width: 768px){
     .subscribe-container{
+        padding: 0.5em 0;
         .subscribe-wrapper{
+            margin: 0;
             .content{
                 display: block;
                 .content-left{
@@ -52,10 +54,13 @@
     }
 }
 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 767px){
     .subscribe-container{
+        margin-top: 1.5rem;
         .subscribe-wrapper{
             .content{
+                width: 100%;
+                box-sizing: border-box;
                 .content-left{
                     .logo{
                         display: block;
@@ -64,6 +69,31 @@
                             margin-top: 1em;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .title-small{
+        margin-top: 0.5em;
+        margin-left: 5%;
+    }
+    
+    .btn-primary{
+        height: 36px;
+        width: 90%;
+        
+        box-sizing: border-box;
+        font-size: 12px;
+        margin: 0 5%;
+        margin-bottom: 0.5em;
+    }
+    .BrainhubCarousel__container{
+        .BrainhubCarousel__trackContainer{
+            .BrainhubCarousel__track[style]{
+                margin-left: 5% !important;
+                li{
+                    justify-content: flex-start;
                 }
             }
         }

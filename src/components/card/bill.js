@@ -11,21 +11,26 @@ function Bill(props){
             <div className="card-body">
                 <div className="body-wrapper">
                     <div className="content">
-                        <p className="title">Tagihan bulan ini</p>
-                        <p className="bill">Rp123.113</p>
+                        <div className="content-title">
+                            <p className="title">Tagihan bulan ini</p>
+                            <Filled />
+                        </div>
+                        <div className="main">
+                            <p className="bill">Rp123.113</p>
+                        </div>
                         <a className="detail" href="bill">
                             <p>LIHAT DETAIL</p>
                             <img src={redArrow} alt=""></img>
                         </a>
                     </div>
                     <div className="element">
-                        <Filled />
+                        <img src={redArrow} alt="red-arrow"></img>
                     </div>
                 </div>
             </div>
             <div className="card-footer">
                 <div className="footer-wrapper">
-                    <div>Tanggal jatuh tempo</div>
+                    <div className="text-footer">Tanggal jatuh tempo</div>
                     <div className="date">30 Juni 2019</div>
                 </div>
             </div>
