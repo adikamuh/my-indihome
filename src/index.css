@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{
+  font-family: 'Ubuntu';
+  src: local('Ubuntu'), url(./assets/fonts/Ubuntu-Regular.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: 'Ubuntu';
+  src: local('UbuntuBold'), url(./assets/fonts/Ubuntu-Bold.ttf) format('truetype');
+  font-weight: bold;
+}

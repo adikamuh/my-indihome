@@ -4,6 +4,7 @@ import './index.css';
 // import './all.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './assets/fonts/Ubuntu-Regular.ttf'
 
 ReactDOM.render(
   <React.StrictMode>
