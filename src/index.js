@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './assets/fonts/Ubuntu-Regular.ttf'
+import './assets/fonts/Ubuntu-Bold.ttf'
 
 ReactDOM.render(
   <React.StrictMode>
