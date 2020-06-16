@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import { Link } from 'react-router-dom'
 
 import './header.scss'
 import HeaderMobile from '../header-mobile/header-mobile'
@@ -50,15 +51,15 @@ class Header extends React.Component{
                     <div className="header-container">
                         <div className="header-wrapper">
                             <nav>
-                                <img className="nav-logo" src={this.state.Icons.logo} alt=""></img>
+                                <Link to="/"><img className="nav-logo" src={this.state.Icons.logo} alt=""></img></Link>
                                 <div className="content-menus">
                                     <ul>
-                                        <li><a href="home">HOME</a></li>
+                                        <li><a href="/">HOME</a></li>
                                         <li className="dropdown-list"><a href="shop">SHOP</a><img src={this.state.Icons.downArrow} className="arrow" alt=""></img></li>
                                         <li><a href="promo">PROMO & EVENT</a></li>
-                                        <li><a href="bantuan">BANTUAN</a></li>
+                                        <li><a href="/bantuan">BANTUAN</a></li>
                                         <li><a href="search"><img className="" alt="" src={this.state.Icons.search}></img></a></li>
-                                        <li><a href="inbox"><img className="" alt="" src={this.state.Icons.inbox}></img></a></li>
+                                        <li><a href="/inbox"><img className="" alt="" src={this.state.Icons.inbox}></img></a></li>
                                         <li><a href="history"><img className="" alt="" src={this.state.Icons.history}></img></a></li>
                                         <li><a href="profile"><img className="" alt="" src={this.state.Icons.profile}></img></a></li>
                                     </ul>

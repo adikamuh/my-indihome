@@ -1,0 +1,30 @@
+.messageBox-container{
+    width: 770px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px 0 #00000033;
+    background-color: #ffffff;
+
+    margin-left: 2rem;
+    padding: 1.5rem 0;
+    
+    .messageBox-wrapper{
+        box-sizing: border-box;
+        .title{
+            padding: 0 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e5e6e6;
+            h5{
+                font-size: 16px;
+                font-weight: normal;
+                letter-spacing: 1.33px;
+                color: #66686a;
+                margin: 0;
+            }
+        }
+    }
+
+    .message-lists{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

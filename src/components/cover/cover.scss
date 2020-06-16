@@ -1,0 +1,38 @@
+.cover-container{
+    margin-top: 5em;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: none;
+
+    box-sizing: border-box;
+    .cover-wrapper{
+        margin: 0 8%;
+        padding: 2rem 0;
+        height: 100%;
+
+        box-sizing: border-box;
+
+        .link{
+            display: flex;
+            align-content: center;
+            justify-content: flex-start;
+
+            color: white;
+            opacity: 0.9;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1;
+            color: #ffffff;
+
+            p{
+                margin-left: 0.5rem;
+            }
+        }
+
+        .title{
+            color: white;
+            margin-top: 100px;
+        }
+    }
+}
